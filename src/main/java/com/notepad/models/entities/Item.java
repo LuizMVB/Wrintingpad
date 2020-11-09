@@ -1,4 +1,4 @@
-package com.notepad.model;
+package com.notepad.models.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

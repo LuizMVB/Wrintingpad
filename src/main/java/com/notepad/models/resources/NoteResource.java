@@ -1,8 +1,8 @@
-package com.notepad.model;
+package com.notepad.models.resources;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import com.notepad.models.entities.Note;
+import com.notepad.models.repositories.NoteRepository;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -11,14 +11,13 @@ import java.util.List;
 
 @Path("/Note")
 public class NoteResource {
-    EntityManagerFactory emf = Persistence.createEntityManagerFactory("Writingpafd");
-    EntityManager em = emf.createEntityManager();
+
+    private NoteRepository noteRepository = new NoteRepository();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Note> get{
-
+    public List<Note> get() {
+        return noteRepository.getAll();
     }
-
 
 }

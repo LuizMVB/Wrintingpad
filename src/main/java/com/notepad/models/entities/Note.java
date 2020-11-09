@@ -1,4 +1,4 @@
-package com.notepad.model;
+package com.notepad.models.entities;
 
 import java.util.ArrayList;
 import java.util.List;

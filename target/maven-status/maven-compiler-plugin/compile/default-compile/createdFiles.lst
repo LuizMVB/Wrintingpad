@@ -1,0 +1,6 @@
+com\notepad\models\entities\Bookmark.class
+com\notepad\models\entities\Note.class
+com\notepad\models\repositories\NoteRepository.class
+com\notepad\models\resources\NoteResource.class
+com\notepad\tests\RelationshipTest.class
+com\notepad\models\entities\Item.class

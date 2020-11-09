@@ -6,9 +6,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import com.notepad.model.Bookmark;
-import com.notepad.model.Item;
-import com.notepad.model.Note;
+import com.notepad.models.entities.Bookmark;
+import com.notepad.models.entities.Item;
+import com.notepad.models.entities.Note;
 
 public class RelationshipTest {
 
